@@ -1,5 +1,5 @@
-require "sinatra"
-
-get '/' do
-  "Hello Sinatra!" # この部分の処理を変更する
-end
+post ‘/create’ do
+    point = params[:point]
+    comment= params[:comment]
+    "ポイント：#{point}　コメント：#{comment}"
+  end
